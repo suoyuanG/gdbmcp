@@ -3,7 +3,7 @@ requires = ["setuptools>=61.0", "setuptools-scm>=7.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "gdbmcp"
+name = "gdbmcp-server"
 description = "GDB mcp server"
 dynamic = ["version"]
 requires-python = ">=3.10"
@@ -16,6 +16,7 @@ dependencies = [
   "gdbrpc",
   "mcp",
 ]
+urls = { "Source" = "https://github.com/suoyuanG/gdbmcp" }
 
 [project.scripts]
 gdbmcp = "gdbmcp.main:main"
