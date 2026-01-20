@@ -23,3 +23,6 @@ gdbmcp = "gdbmcp.main:main"
 [tool.setuptools.packages.find]
 where = ["."]
 include = ["gdbmcp*"]
+
+[tool.setuptools_scm]
+write_to = "gdbmcp/_version.py"
