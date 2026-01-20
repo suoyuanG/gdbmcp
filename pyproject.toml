@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0", "setuptools-scm>=7.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gdbmcp"
+description = "GDB mcp server"
+dynamic = ["version"]
+requires-python = ">=3.10"
+license = "Apache-2.0"
+maintainers = [
+    { name = "suoyuan", email = "suoyuan666@s5n.xyz" },
+    { name = "Neo Xu", email = "neo.xu1990@gmail.com" }
+]
+dependencies = [
+  "gdbrpc",
+  "mcp",
+]
+
+[project.scripts]
+gdbmcp = "gdbmcp.main:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["gdbmcp*"]
