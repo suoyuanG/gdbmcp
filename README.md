@@ -1,6 +1,6 @@
 # gdbmcp
 
-GDB MCP server for NuttX.
+GDB MCP server.
 
 ## Overview
 `gdbmcp` exposes GDB operations over the MCP (Model Context Protocol) using `FastMCP`. It manages GDB sessions over a socket connection (via `gdbrpc`) and provides MCP tools to connect, list, terminate sessions, and run GDB commands.
