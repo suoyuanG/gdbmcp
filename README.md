@@ -17,6 +17,13 @@ GDB MCP server.
 - **HTTP mode only**: `uvicorn` (required to run the HTTP server)
 
 ## Installation
+
+From PyPI:
+
+```bash
+pip install gdbmcp-server
+```
+
 From repo root:
 
 ```bash
@@ -33,18 +40,13 @@ pip install -e .
 
 ### Run MCP server (stdio)
 ```bash
-gdbmcp --stdio
+python -m gdbmcp-server gdbmcp --stdio
 ```
 
 ### Run MCP server (HTTP)
-```bash
-gdbmcp --port 20819
-```
-
-You can also run via module:
 
 ```bash
-python -m gdbmcp --stdio
+python -m gdbmcp-server
 ```
 
 ## MCP Tools
